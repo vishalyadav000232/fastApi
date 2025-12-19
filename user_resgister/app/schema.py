@@ -18,8 +18,26 @@ class UserOut(BaseModel):
     id: int
     username: str
     email: EmailStr
-    password : str
+ 
 
 class UserResponse(BaseModel):
     message: str
     user: UserOut
+
+
+class UserLogin(BaseModel):
+    email:str=Field(..., examples=["user@gmail.com"])
+    password : str = Field(..., examples=["User@123"] , min_length=8)
+
+    @field_validator("password")
+    @classmethod
+    def validate_login_password(cls, value):
+        if "password" in value.lower():
+            raise ValueError("Password is too weak")
+        if  len(value) < 8 :
+            raise ValueError("Password is to short")
+        return value
+
+class LoginResponse(BaseModel):
+    message  : str
+    
