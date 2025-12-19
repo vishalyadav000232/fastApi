@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "todo": "Learn FastAPI",
+        "createDate": "2025-12-17T10:37:22.644544"
+    },
+    {
+        "id": 2,
+        "todo": "Learn vishal",
+        "createDate": "2025-12-17T10:37:27.804463"
+    },
+    {
+        "id": 3,
+        "todo": "Learn FaswqwqtAPIqw",
+        "createDate": "2025-12-17T10:37:30.271197"
+    },
+    {
+        "id": 4,
+        "todo": "Learn FaswqwqewqwwqtAPIqw",
+        "createDate": "2025-12-17T10:37:32.776818"
+    },
+    {
+        "id": 5,
+        "todo": "Learn FaswqwqewqqwewqewwwqtAPIqw",
+        "createDate": "2025-12-17T10:37:35.530644"
+    }
+]
