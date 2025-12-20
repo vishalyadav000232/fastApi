@@ -42,3 +42,19 @@ pip3 install fastapi uvicorn pydantic # if windos then you normaly pip
 uvicorn main:app --reload
 ```
 
+```bash
+project/
+│
+├─ app/
+│   ├─ main.py        # FastAPI app instance
+│   ├─ models.py      # Pydantic models
+│   ├─ routes/        # Routers
+│   │    └─ user.py
+│   ├─ services/      # Business logic
+│   ├─ database.py    # DB connection
+│   └─ config.py      # Env variables
+│
+├─ requirements.txt
+└─ .env
+
+```
