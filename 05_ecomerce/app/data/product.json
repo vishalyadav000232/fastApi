@@ -1,0 +1,619 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "lastUpdated": "2026-01-06",
+        "totalProducts": 31,
+        "currency": "USD"
+    },
+    "products": [
+        {
+            "id": "PROD_001",
+            "sku": "SKU-TECH-001",
+            "name": "Enterprise Server System",
+            "category": "Technology/Hardware",
+            "subcategory": "Servers",
+            "description": "High-performance enterprise server with dual processors and redundant systems",
+            "price": 12500.0,
+            "costPrice": 8000.0,
+            "discount": 5,
+            "stock": 45,
+            "manufacturer": "TechCorp Industries",
+            "specifications": {
+                "processor": "Dual Intel Xeon",
+                "ram": "256GB DDR4",
+                "storage": "10TB SSD",
+                "powerConsumption": "3000W"
+            },
+            "rating": 4.8,
+            "reviews": 342
+        },
+        {
+            "id": "PROD_002",
+            "sku": "SKU-TECH-002",
+            "name": "Wireless Networking Switch",
+            "category": "Technology/Networking",
+            "subcategory": "Network Equipment",
+            "description": "Industrial-grade wireless switch with enterprise management",
+            "price": 4200.0,
+            "costPrice": 2800.0,
+            "discount": 8,
+            "stock": 120,
+            "manufacturer": "NetFlow Systems",
+            "specifications": {
+                "ports": 48,
+                "bandwidth": "400Gbps",
+                "redundancy": "N+1",
+                "management": "Cloud-based"
+            },
+            "rating": 4.7,
+            "reviews": 215
+        },
+        {
+            "id": "PROD_003",
+            "sku": "SKU-PHARM-001",
+            "name": "Pharmaceutical Grade Compressor",
+            "category": "Healthcare/Equipment",
+            "subcategory": "Medical Devices",
+            "description": "FDA-approved air compressor for pharmaceutical production",
+            "price": 18000.0,
+            "costPrice": 11000.0,
+            "discount": 3,
+            "stock": 15,
+            "manufacturer": "PharmaTech Solutions",
+            "specifications": {
+                "capacity": "500L",
+                "pressure": "10 bar",
+                "certification": "FDA-Class-II",
+                "warranty": "5 years"
+            },
+            "rating": 4.9,
+            "reviews": 89
+        },
+        {
+            "id": "PROD_004",
+            "sku": "SKU-CHEM-001",
+            "name": "Industrial Solvent - Isopropyl Alcohol 99.9%",
+            "category": "Chemicals/Solvents",
+            "subcategory": "Organic Solvents",
+            "description": "High-purity industrial solvent for manufacturing and cleaning",
+            "price": 45.5,
+            "costPrice": 28.0,
+            "discount": 0,
+            "stock": 5000,
+            "manufacturer": "ChemPure Corp",
+            "specifications": {
+                "purity": "99.9%",
+                "packaging": "55-gallon drum",
+                "hazardClass": "Class 3 Flammable",
+                "shelf_life": "24 months"
+            },
+            "rating": 4.6,
+            "reviews": 567
+        },
+        {
+            "id": "PROD_005",
+            "sku": "SKU-AUTO-001",
+            "name": "Automotive Grade Hydraulic Fluid",
+            "category": "Automotive/Fluids",
+            "subcategory": "Lubricants & Hydraulics",
+            "description": "Heavy-duty hydraulic fluid for industrial and automotive applications",
+            "price": 28.75,
+            "costPrice": 16.5,
+            "discount": 2,
+            "stock": 3200,
+            "manufacturer": "AutoFlow Industries",
+            "specifications": {
+                "viscosity": "ISO VG 46",
+                "rating": "ISO 4406:2016",
+                "packaging": "205-liter drum",
+                "antiWear": "Yes"
+            },
+            "rating": 4.7,
+            "reviews": 834
+        },
+        {
+            "id": "PROD_006",
+            "sku": "SKU-CONS-001",
+            "name": "Concrete Mix - Premium Grade",
+            "category": "Construction/Materials",
+            "subcategory": "Concrete & Aggregates",
+            "description": "High-strength concrete mix for structural applications",
+            "price": 95.0,
+            "costPrice": 52.0,
+            "discount": 5,
+            "stock": 12000,
+            "manufacturer": "BuildStrong Materials",
+            "specifications": {
+                "strength": "35 MPa",
+                "slump": "150mm",
+                "packaging": "25kg bag",
+                "coverage": "1.4 cubic meters/bag"
+            },
+            "rating": 4.8,
+            "reviews": 2145
+        },
+        {
+            "id": "PROD_007",
+            "sku": "SKU-ELECTRO-001",
+            "name": "Industrial Variable Frequency Drive",
+            "category": "Electronics/Power",
+            "subcategory": "Power Electronics",
+            "description": "3-phase industrial VFD for motor speed control",
+            "price": 8900.0,
+            "costPrice": 5200.0,
+            "discount": 6,
+            "stock": 78,
+            "manufacturer": "PowerTech Motors",
+            "specifications": {
+                "capacity": "75kW",
+                "inputVoltage": "380-480V",
+                "efficiency": "98.5%",
+                "coolingType": "Forced Air"
+            },
+            "rating": 4.6,
+            "reviews": 423
+        },
+        {
+            "id": "PROD_008",
+            "sku": "SKU-FOOD-001",
+            "name": "Food Grade Stainless Steel Tank",
+            "category": "Food & Beverage/Equipment",
+            "subcategory": "Storage Tanks",
+            "description": "Temperature-controlled storage tank for food production",
+            "price": 22000.0,
+            "costPrice": 13000.0,
+            "discount": 4,
+            "stock": 22,
+            "manufacturer": "FoodSafe Equipment",
+            "specifications": {
+                "capacity": "5000L",
+                "material": "304 Stainless Steel",
+                "certification": "FDA-approved",
+                "temperature": "-20 to 80°C"
+            },
+            "rating": 4.9,
+            "reviews": 178
+        },
+        {
+            "id": "PROD_009",
+            "sku": "SKU-TEXTILE-001",
+            "name": "Industrial Yarn - Polyester",
+            "category": "Textiles/Raw Materials",
+            "subcategory": "Yarns & Fibers",
+            "description": "High-strength polyester yarn for textile manufacturing",
+            "price": 12.3,
+            "costPrice": 7.2,
+            "discount": 0,
+            "stock": 45000,
+            "manufacturer": "TextilePro Mills",
+            "specifications": {
+                "denier": "150D",
+                "twist": "45 TPI",
+                "packaging": "5kg spool",
+                "tensileStrength": "4.5 g/d"
+            },
+            "rating": 4.5,
+            "reviews": 678
+        },
+        {
+            "id": "PROD_010",
+            "sku": "SKU-PAPER-001",
+            "name": "Industrial Paper Rolls",
+            "category": "Paper & Pulp/Materials",
+            "subcategory": "Paper Products",
+            "description": "High-quality industrial paper rolls for packaging",
+            "price": 185.0,
+            "costPrice": 105.0,
+            "discount": 7,
+            "stock": 8500,
+            "manufacturer": "PaperMill Corp",
+            "specifications": {
+                "weight": "100gsm",
+                "width": "1.5 meters",
+                "length": "1000 meters",
+                "brightness": "85%"
+            },
+            "rating": 4.4,
+            "reviews": 432
+        },
+        {
+            "id": "PROD_011",
+            "sku": "SKU-METAL-001",
+            "name": "Cold Rolled Steel Coil",
+            "category": "Metals & Alloys/Raw Materials",
+            "subcategory": "Steel Products",
+            "description": "Premium quality cold-rolled steel for industrial manufacturing",
+            "price": 650.0,
+            "costPrice": 380.0,
+            "discount": 3,
+            "stock": 450,
+            "manufacturer": "SteelMaster Industries",
+            "specifications": {
+                "thickness": "0.8mm",
+                "width": "1000mm",
+                "weight": "6.4kg/m²",
+                "tensileStrength": "410 MPa"
+            },
+            "rating": 4.7,
+            "reviews": 892
+        },
+        {
+            "id": "PROD_012",
+            "sku": "SKU-ENERGY-001",
+            "name": "Solar Panel - 400W",
+            "category": "Energy/Renewable",
+            "subcategory": "Solar Equipment",
+            "description": "High-efficiency monocrystalline solar panel for commercial installations",
+            "price": 450.0,
+            "costPrice": 280.0,
+            "discount": 8,
+            "stock": 1200,
+            "manufacturer": "SunPower Energy",
+            "specifications": {
+                "wattage": "400W",
+                "efficiency": "20.5%",
+                "dimensions": "2.2m x 1.1m",
+                "warranty": "25 years"
+            },
+            "rating": 4.8,
+            "reviews": 1245
+        },
+        {
+            "id": "PROD_013",
+            "sku": "SKU-PUMP-001",
+            "name": "Centrifugal Pump - Industrial Grade",
+            "category": "Industrial Equipment/Pumps",
+            "subcategory": "Centrifugal Pumps",
+            "description": "Heavy-duty centrifugal pump for industrial fluid transfer",
+            "price": 5800.0,
+            "costPrice": 3400.0,
+            "discount": 5,
+            "stock": 65,
+            "manufacturer": "FluidFlow Systems",
+            "specifications": {
+                "capacity": "500 GPM",
+                "pressure": "150 PSI",
+                "material": "Cast Iron",
+                "motorPower": "25 HP"
+            },
+            "rating": 4.7,
+            "reviews": 356
+        },
+        {
+            "id": "PROD_014",
+            "sku": "SKU-COMPRESSOR-001",
+            "name": "Rotary Screw Compressor",
+            "category": "Industrial Equipment/Compressors",
+            "subcategory": "Air Compressors",
+            "description": "Oil-injected rotary screw air compressor for continuous duty",
+            "price": 15000.0,
+            "costPrice": 8900.0,
+            "discount": 4,
+            "stock": 28,
+            "manufacturer": "AirPower Tech",
+            "specifications": {
+                "displacement": "250 CFM",
+                "pressure": "125 PSI",
+                "horsepower": "40 HP",
+                "efficiency": "94%"
+            },
+            "rating": 4.8,
+            "reviews": 567
+        },
+        {
+            "id": "PROD_015",
+            "sku": "SKU-FILTER-001",
+            "name": "Industrial HEPA Filter",
+            "category": "Filtration/Components",
+            "subcategory": "Air Filters",
+            "description": "High-efficiency particulate air filter for industrial applications",
+            "price": 320.0,
+            "costPrice": 165.0,
+            "discount": 2,
+            "stock": 2800,
+            "manufacturer": "FilterPure Industries",
+            "specifications": {
+                "efficiency": "99.97%",
+                "particleSize": "0.3 microns",
+                "flowRate": "500 CFM",
+                "lifespan": "12 months"
+            },
+            "rating": 4.6,
+            "reviews": 789
+        },
+        {
+            "id": "PROD_016",
+            "sku": "SKU-VALVE-001",
+            "name": "Industrial Ball Valve - 2 inch",
+            "category": "Plumbing & Hydraulics/Valves",
+            "subcategory": "Ball Valves",
+            "description": "Full-port brass ball valve for industrial applications",
+            "price": 125.5,
+            "costPrice": 65.0,
+            "discount": 0,
+            "stock": 5600,
+            "manufacturer": "ValveCorp Industries",
+            "specifications": {
+                "size": "2 inch (50mm)",
+                "material": "Brass",
+                "pressure": "600 PSI",
+                "threaded": "NPT"
+            },
+            "rating": 4.5,
+            "reviews": 1023
+        },
+        {
+            "id": "PROD_017",
+            "sku": "SKU-BEARING-001",
+            "name": "Deep Groove Ball Bearing",
+            "category": "Mechanical Components/Bearings",
+            "subcategory": "Ball Bearings",
+            "description": "High-speed precision ball bearing for industrial machinery",
+            "price": 45.75,
+            "costPrice": 22.0,
+            "discount": 3,
+            "stock": 12000,
+            "manufacturer": "BearingPro Tech",
+            "specifications": {
+                "size": "6205ZZ",
+                "bore": "25mm",
+                "capacity": "C0 rating 13.7kN",
+                "speed": "10000 RPM"
+            },
+            "rating": 4.7,
+            "reviews": 2134
+        },
+        {
+            "id": "PROD_018",
+            "sku": "SKU-CABLE-001",
+            "name": "Industrial Power Cable - 10AWG",
+            "category": "Electrical/Cables",
+            "subcategory": "Power Cables",
+            "description": "Heavy-duty industrial power cable for high-current applications",
+            "price": 2.5,
+            "costPrice": 1.2,
+            "discount": 0,
+            "stock": 50000,
+            "manufacturer": "CablePower Corp",
+            "specifications": {
+                "gauge": "10AWG",
+                "voltage": "600V",
+                "amperage": "55A",
+                "material": "Copper"
+            },
+            "rating": 4.6,
+            "reviews": 3456
+        },
+        {
+            "id": "PROD_019",
+            "sku": "SKU-REFRIG-001",
+            "name": "Industrial Refrigeration Unit",
+            "category": "HVAC & Refrigeration/Equipment",
+            "subcategory": "Refrigeration",
+            "description": "Commercial-grade refrigeration system for food and pharmaceutical",
+            "price": 35000.0,
+            "costPrice": 20000.0,
+            "discount": 6,
+            "stock": 8,
+            "manufacturer": "CoolTech Systems",
+            "specifications": {
+                "capacity": "50 tons",
+                "temperature": "-40 to -10°C",
+                "refrigerant": "R404A",
+                "warranty": "3 years"
+            },
+            "rating": 4.9,
+            "reviews": 145
+        },
+        {
+            "id": "PROD_020",
+            "sku": "SKU-GENERATOR-001",
+            "name": "Industrial Diesel Generator - 500kW",
+            "category": "Power Generation/Generators",
+            "subcategory": "Diesel Generators",
+            "description": "Heavy-duty diesel generator for emergency and continuous power",
+            "price": 95000.0,
+            "costPrice": 55000.0,
+            "discount": 5,
+            "stock": 5,
+            "manufacturer": "PowerGen Industries",
+            "specifications": {
+                "capacity": "500kW",
+                "voltage": "380V 3-phase",
+                "fuelConsumption": "125L/hour",
+                "warranty": "2 years"
+            },
+            "rating": 4.8,
+            "reviews": 267
+        },
+        {
+            "id": "PROD_021",
+            "sku": "SKU-CONVEYOR-001",
+            "name": "Modular Conveyor System",
+            "category": "Material Handling/Conveyors",
+            "subcategory": "Conveyor Systems",
+            "description": "Flexible modular conveyor belt system for production lines",
+            "price": 18500.0,
+            "costPrice": 10800.0,
+            "discount": 4,
+            "stock": 32,
+            "manufacturer": "ConveyFlow Tech",
+            "specifications": {
+                "length": "20 meters",
+                "speed": "0-60 m/min",
+                "capacity": "500kg/m",
+                "beltType": "Modular Plastic"
+            },
+            "rating": 4.7,
+            "reviews": 423
+        },
+        {
+            "id": "PROD_022",
+            "sku": "SKU-PACKAGING-001",
+            "name": "Automatic Packaging Machine",
+            "category": "Packaging/Machinery",
+            "subcategory": "Packaging Equipment",
+            "description": "High-speed automatic packaging and sealing machine",
+            "price": 42000.0,
+            "costPrice": 24000.0,
+            "discount": 7,
+            "stock": 12,
+            "manufacturer": "PackTech Industries",
+            "specifications": {
+                "speed": "80 packages/min",
+                "bagSize": "10-30cm",
+                "material": "Stainless Steel",
+                "warranty": "2 years"
+            },
+            "rating": 4.8,
+            "reviews": 298
+        },
+        {
+            "id": "PROD_023",
+            "sku": "SKU-SAFETY-001",
+            "name": "Industrial Safety Helmet",
+            "category": "Safety & PPE/Personal Protective Equipment",
+            "subcategory": "Head Protection",
+            "description": "ANSI-certified hard hat for industrial work environments",
+            "price": 35.0,
+            "costPrice": 18.0,
+            "discount": 0,
+            "stock": 8000,
+            "manufacturer": "SafetyFirst Corp",
+            "specifications": {
+                "certification": "ANSI Z89.1",
+                "material": "ABS Plastic",
+                "weight": "400g",
+                "lifespan": "5 years"
+            },
+            "rating": 4.7,
+            "reviews": 1876
+        },
+        {
+            "id": "PROD_024",
+            "sku": "SKU-GLOVES-001",
+            "name": "Industrial Work Gloves - Nitrile",
+            "category": "Safety & PPE/Hand Protection",
+            "subcategory": "Work Gloves",
+            "description": "Durable nitrile-coated work gloves for manufacturing",
+            "price": 8.5,
+            "costPrice": 3.5,
+            "discount": 2,
+            "stock": 25000,
+            "manufacturer": "ProtectHands Inc",
+            "specifications": {
+                "material": "Cotton/Nitrile",
+                "grip": "Enhanced",
+                "packaging": "Pack of 12 pairs",
+                "size": "S-XL"
+            },
+            "rating": 4.5,
+            "reviews": 3245
+        },
+        {
+            "id": "PROD_025",
+            "sku": "SKU-LUBRICANT-001",
+            "name": "Multi-Purpose Machine Lubricant",
+            "category": "Lubricants & Oils/Machine Oils",
+            "subcategory": "General Lubricants",
+            "description": "Versatile lubricant for industrial machinery and equipment",
+            "price": 22.5,
+            "costPrice": 12.0,
+            "discount": 0,
+            "stock": 8000,
+            "manufacturer": "LubeFlow Industries",
+            "specifications": {
+                "viscosity": "ISO 32",
+                "type": "Mineral Oil",
+                "packaging": "1-liter bottle",
+                "pour_point": "-15°C"
+            },
+            "rating": 4.5,
+            "reviews": 1567
+        },
+        {
+            "id": "PROD_026",
+            "sku": "SKU-FASTENERS-001",
+            "name": "Stainless Steel Bolts - M12",
+            "category": "Fasteners & Hardware/Bolts",
+            "subcategory": "Bolts",
+            "description": "Grade 8.8 stainless steel bolts for industrial assembly",
+            "price": 0.85,
+            "costPrice": 0.35,
+            "discount": 0,
+            "stock": 500000,
+            "manufacturer": "FastenerPro Inc",
+            "specifications": {
+                "size": "M12 x 60mm",
+                "material": "Stainless Steel 304",
+                "grade": "8.8",
+                "packaging": "Bulk (5kg)"
+            },
+            "rating": 4.7,
+            "reviews": 8945
+        },
+        {
+            "id": "PROD_027",
+            "sku": "SKU-DRILL-001",
+            "name": "Industrial Drill Bit Set",
+            "category": "Tools & Equipment/Cutting Tools",
+            "subcategory": "Drill Bits",
+            "description": "High-speed steel drill bit set for metal and composite drilling",
+            "price": 65.0,
+            "costPrice": 32.0,
+            "discount": 5,
+            "stock": 1800,
+            "manufacturer": "ToolMaster Industries",
+            "specifications": {
+                "pieces": 101,
+                "material": "High Speed Steel",
+                "size_range": "1.0-10mm",
+                "case": "Metal storage case"
+            },
+            "rating": 4.7,
+            "reviews": 987
+        },
+        {
+            "id": "PROD_028",
+            "sku": "SKU-GRINDER-001",
+            "name": "Industrial Angle Grinder - 9 inch",
+            "category": "Tools & Equipment/Grinding Tools",
+            "subcategory": "Angle Grinders",
+            "description": "Professional angle grinder for grinding and cutting applications",
+            "price": 185.0,
+            "costPrice": 95.0,
+            "discount": 2,
+            "stock": 2200,
+            "manufacturer": "GrindMaster Corp",
+            "specifications": {
+                "disc_size": "9 inch (230mm)",
+                "power": "2400W",
+                "speed": "6600 RPM",
+                "warranty": "2 years"
+            },
+            "rating": 4.6,
+            "reviews": 1456
+        },
+        {
+            "id": "PROD_029",
+            "sku": "SKU-WELDER-001",
+            "name": "Industrial MIG Welder - 500A",
+            "category": "Tools & Equipment/Welding Equipment",
+            "subcategory": "Welders",
+            "description": "Professional MIG welding machine for heavy-duty applications",
+            "price": 3200.0,
+            "costPrice": 1800.0,
+            "discount": 4,
+            "stock": 78,
+            "manufacturer": "WeldTech Industries",
+            "specifications": {
+                "amperage": "500A",
+                "duty_cycle": "100%",
+                "input_voltage": "380V 3-phase",
+                "warranty": "3 years"
+            },
+            "rating": 4.9,
+            "reviews": 567
+        }
+    ]
+}

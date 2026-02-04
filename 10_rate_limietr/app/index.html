@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Seats WebSocket</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .seat {
+      display: inline-block;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 120px;
+      text-align: center;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    .free {
+      background: #b6fcb6;
+    }
+
+    .occupied {
+      background: #ffb3b3;
+    }
+
+    .box {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>📡 Live Seat Updates (FastAPI WebSocket)</h2>
+<p>Seat pe click karo (free ↔ occupied). Multiple tabs open karke test karo 🔥</p>
+
+<div id="seats"></div>
+
+<div class="box">
+  <h3>📩 Logs</h3>
+  <pre id="logs"></pre>
+</div>
+
+<script>
+  const logs = document.getElementById("logs");
+  const seatsDiv = document.getElementById("seats");
+
+  function log(msg) {
+    logs.textContent += msg + "\n";
+  }
+
+  let seatsData = [];
+
+  function renderSeats() {
+    seatsDiv.innerHTML = "";
+
+    seatsData.forEach(seat => {
+      const div = document.createElement("div");
+      div.className = `seat ${seat.status}`;
+      div.innerText = `Seat ${seat.seat_id}\n(${seat.status})`;
+
+      div.onclick = () => {
+        const newStatus = seat.status === "free" ? "occupied" : "free";
+
+        ws.send(JSON.stringify({
+          type: "update_seat",
+          seat_id: seat.seat_id,
+          status: newStatus
+        }));
+      };
+
+      seatsDiv.appendChild(div);
+    });
+  }
+
+  const ws = new WebSocket("ws://127.0.0.1:8000/ws/seats");
+
+  ws.onopen = () => {
+    log("✅ WebSocket Connected");
+  };
+
+  ws.onmessage = (event) => {
+    const msg = JSON.parse(event.data);
+
+    if (msg.type === "initial_data") {
+      log("📦 Initial seats data received");
+      seatsData = msg.seats;
+      renderSeats();
+    }
+
+    if (msg.type === "seat_update") {
+      log("🔁 Seats updated (broadcast received)");
+      seatsData = msg.seats;
+      renderSeats();
+    }
+
+    if (msg.type === "error") {
+      log("❌ Error: " + msg.message);
+    }
+  };
+
+  ws.onclose = () => {
+    log("❌ WebSocket Closed");
+  };
+
+  ws.onerror = (err) => {
+    log("⚠️ WebSocket Error: " + err);
+  };
+</script>
+
+</body>
+</html>
